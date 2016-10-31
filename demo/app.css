@@ -1,0 +1,22 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+@media (platform: desktop) {
+    div:before {
+        content: "This is the desktop build!";
+    }
+}
+
+@media (platform: xbox) {
+    div:before {
+        content: "This is the XBOX build!";
+    }
+}
+
+@media (platform: not-xbox) {
+    div:after {
+        content: "This is not the XBOX build!";
+    }
+}
